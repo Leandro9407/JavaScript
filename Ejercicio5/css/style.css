@@ -1,0 +1,37 @@
+.titulo{
+    font-family: 'Monoton';
+    font-weight: 700;
+    font-size: 200px;
+    background: linear-gradient(rgb(180, 172, 221),rgb(23, 5, 104));
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+.placeholder_1{
+    background-image: url("https://images.wallpaperscraft.com/image/single/chip_circuit_processor_140251_1600x900.jpg");
+    padding: 30px;
+    margin-bottom: 8px;
+    background-position: 50% 50%;
+}
+
+.placeholder_2{
+    background-image: url("https://images.wallpaperscraft.com/image/single/hologram_scheme_scifi_139294_1600x900.jpg");
+    padding: 30px;
+    margin-bottom: 8px;
+    background-position: 50% 50%;
+}
+
+.placeholder_3{
+    background-image: url("https://images.wallpaperscraft.com/image/single/computer_motherboard_cooler_201602_1600x900.jpg");
+    padding: 30px;
+    margin-bottom: 8px;
+    background-position: 50% 50%;
+}
+
+.placeholder_4{
+    background-image: url("https://images.wallpaperscraft.com/image/single/keyboard_backlight_purple_212155_1600x900.jpg");
+    padding: 30px;
+    margin-bottom: 8px;
+    background-position: 50% 50%;
+}
