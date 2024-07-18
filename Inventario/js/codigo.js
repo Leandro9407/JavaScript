@@ -18,6 +18,8 @@ function agregarProducto(){
     });
     mostrando.innerHTML = añadir_inventario;
 
+    document.getElementById("productoAgregado").value = "";
+    document.getElementById("cantidadAgregado").value = "";
 }
 
 
@@ -44,6 +46,10 @@ function modificarProducto(){
     });
 
     actualizando.innerHTML = añadir_inventario;
+
+    document.getElementById("productoComparar").value = "";
+    document.getElementById("cantidadModificado").value = ""; 
+    document.getElementById("productoModificado").value = "";
 
 
     function eliminar(){
