@@ -8,9 +8,14 @@ function agregarProducto(){
     let agregando_p = document.getElementById("productoAgregado").value;
     let agregando_c = parseInt (document.getElementById("cantidadAgregado").value);
 
-    producto.push(agregando_p);
-    cantidad.push(agregando_c);
 
+    producto.push(agregando_p);
+    cantidad.push(agregando_c);        
+        
+   
+    console.log(producto);
+    console.log(cantidad);
+   
     let añadir_inventario = "";
     producto.forEach(function(producto, indice){
     añadir_inventario += '<li class="list-group-item list-group-item-danger d-flex justify-content-between align-items-center">' + producto;
@@ -18,6 +23,14 @@ function agregarProducto(){
     });
     mostrando.innerHTML = añadir_inventario;
 
+    for (let i=0; i<producto.length; i++){
+        if (agregando_p==producto[i]){
+            cantidad[i]+=agregando_c;    
+
+            
+        }
+    };    
+    
     document.getElementById("productoAgregado").value = "";
     document.getElementById("cantidadAgregado").value = "";
 }
@@ -50,11 +63,5 @@ function modificarProducto(){
     document.getElementById("productoComparar").value = "";
     document.getElementById("cantidadModificado").value = ""; 
     document.getElementById("productoModificado").value = "";
-
-
-    function eliminar(){
-     
-        
-    }
 
 }
